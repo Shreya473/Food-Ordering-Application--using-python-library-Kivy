@@ -1,0 +1,24 @@
+<Menu>:
+MDScreen:
+    MDNavigationLayout:
+        MDScreenManager:
+            MDScreen:
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    MDTopAppBar:
+                        title: "Aahar"
+                        elevation: 10
+                        left_action_items: [['menu', lambda x: nav_drawer.toggle_nav_drawer()]]
+                        left_action_items: [['logout', lambda x: nav_drawer.toggle_nav_drawer()]]
+                    Widget:
+        MDNavigationDrawer:
+            id: nav_drawer
+            MDBoxLayout:
+                orientation:'vertical'
+
+                MDLabel:
+                    text:'shreya'
+                    font_size:'12sp'
+                MDLabel:
+                    text:''
+                    font_size:'12sp'

@@ -1,0 +1,57 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+#:import tool_bar libs.components.tool_bar.Menu
+#:import profile_pic libs.components.profile_pic.Profile_pic
+#:import appbar libs.components.appbar.AppBar
+
+<HomePage>:
+    md_bg_color: get_color_from_hex("#FFFFFF")
+
+    MDBoxLayout:
+        orientation:'vertical'
+
+       #Menu
+        Menu:
+
+        MDSeparator:
+
+        # Appbar
+            AaharApp:
+
+            MDBoxLayout:
+
+                ScrollView:
+                    bar_width: 0
+
+                    MDBoxLayout:
+                        adaptive_height: True
+
+                        MDBoxLayout:
+                            orientation: 'vertical'
+                            adaptive_height: True
+                            id: timeline
+
+                            # Stories
+
+
+                            MDBoxLayout:
+                                adaptive_width: True
+                                spacing: 5
+                                padding: 5
+
+                            Profile_pic:
+                                avatar: root.profile_picture
+
+                                MDBoxLayout:
+                                    adaptive_width: True
+                                    padding: 5
+                                    spacing: 5
+                                    id: stories
+
+                        MDSeparator:
+
+            # Bottom Navigation Bar
+            AppBar:
+
+
+
+
